@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 21px 0;
+  box-sizing: border-box;
+}
+
+.header {
+  min-height: 477px;
+  background: url("img/bg1 3.jpg") no-repeat;
+  box-sizing: border-box;
+  padding-top: 28px;
+}
+.header__logo {
+  display: block;
+  width: 100px;
+  height: 29px;
+  background: url("img/logo.png");
+}
+.header__logoMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__bigMenu {
+  display: none;
+}
+.header__textLink {
+  margin-top: 242px;
+}
+.header__textLink .slogan {
+  width: 270px;
+  margin-bottom: 10px;
+  color: #222222;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.header__textLink .slogan span {
+  font-size: 22.5px;
+  line-height: 50px;
+}
+
+.button {
+  display: block;
+  width: 278px;
+  height: 48px;
+  background: #008DCD;
+  border-radius: 30px;
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: center;
+  line-height: 47.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.weAggregator {
+  background: url(img/Group_2.png) 50% 7% no-repeat #F7F7F7;
+  margin-top: 27px;
+  padding: 17px 21px;
+}
+.weAggregator__text {
+  height: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 160px;
+}
+.weAggregator__text h2 {
+  font-size: 17px;
+  text-align: center;
+  line-height: 22px;
+}
+.weAggregator__text p {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.steps {
+  padding: 27px 21px;
+  display: grid;
+  grid-gap: 32px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.step {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 188px 22px auto;
+  grid-gap: 20px;
+}
+.step__name {
+  margin-top: 3px;
+  font-size: 24px;
+}
+.step__content {
+  font-size: 14px;
+}
+
+.takeCare {
+  padding: 22px;
+  display: grid;
+  grid-gap: 17px;
+  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+  align-items: center;
+  justify-items: end;
+  background: #F7F7F7;
+}
+.takeCare__item {
+  width: 100%;
+  height: 100%;
+}
+.takeCare h3 {
+  font-size: 22px;
+}
+
+.WeCanCall {
+  height: 244px;
+  display: grid;
+  grid-gap: 14px;
+  background: #008DCD;
+  padding: 32px 21px 7px;
+}
+.WeCanCall__header h2 {
+  color: #FFFFFF;
+  font-size: 26px;
+  line-height: 1.25;
+  margin-bottom: 15px;
+}
+.WeCanCall__header p {
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.WeCanCall__phoneInput {
+  width: 278px;
+  height: 48px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background: #008DCD;
+  color: #FFFFFF;
+  padding-left: 24px;
+  margin-bottom: 9px;
+}
+.WeCanCall__phoneInput::placeholder {
+  color: #FFFFFF;
+  font-size: 12px;
+}
+.WeCanCall__button {
+  background: #FFCC00;
+  color: #363636;
+  margin-bottom: 7px;
+}
+.WeCanCall__checkBlock {
+  display: flex;
+  align-items: center;
+}
+.WeCanCall__checkBlock input {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+.WeCanCall__checkBlock label {
+  font-size: 8px;
+  color: #FFFFFF;
+  margin-left: 8px;
+}
+
+.fromMiniMenu {
+  padding: 13px 23px 28px;
+  box-sizing: border-box;
+}
+.fromMiniMenu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fromMiniMenu__menu {
+  margin-top: 20px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fromMiniMenu__list {
+  list-style: none;
+}
+.fromMiniMenu__link {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+.fromMiniMenu__form {
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: 25px 48px 48px 12px;
+  height: 200px;
+  grid-gap: 20px;
+  justify-content: space-between;
+}
+.fromMiniMenu__form h2 {
+  font-size: 18px;
+  line-height: 2;
+}
+.fromMiniMenu .phoneInput {
+  height: 48px;
+  width: 274px;
+  border: 1px solid #363636;
+  border-radius: 30px;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+.fromMiniMenu .button__menu {
+  width: 274px;
+}
+.fromMiniMenu .checkBlock {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.fromMiniMenu .checkBlock #m-1 {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #9E9E9E;
+  margin-left: 5px;
+}
+.fromMiniMenu .checkBlock #labM-1 {
+  font-size: 10px;
+  color: #9E9E9E;
+  margin-left: 5px;
+}
+.fromMiniMenu__icons {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0 34px 0;
+  }
+
+  .header {
+    min-height: 415px;
+    background: url("img/bg2 3.jpg") no-repeat;
+  }
+  .header__miniMenu {
+    display: none;
+  }
+  .header__bigMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  .header__textLink {
+    margin-top: 45px;
+  }
+  .header__textLink .slogan {
+    width: 400px;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+  }
+  .header__textLink span {
+    font-size: 31px;
+    line-height: 55px;
+  }
+  .header__textLink a {
+    margin: 36px 0 0;
+  }
+
+  .bigMenu__list {
+    list-style: none;
+  }
+
+  .bigMenu__link {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+
+  .weAggregator {
+    height: 260px;
+    background: url(img/Group_2.png) 92% 65%/52% auto no-repeat #F7F7F7;
+    margin-top: 0;
+    padding: 25px 34px 38px;
+  }
+  .weAggregator__text {
+    height: 250px;
+    margin-top: 0;
+  }
+  .weAggregator__text h2 {
+    font-size: 35px;
+    text-align: left;
+    line-height: 22px;
+  }
+  .weAggregator__text p {
+    width: 290px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .steps {
+    padding: 38px 74px;
+  }
+
+  .takeCare {
+    padding: 30px 34px;
+  }
+  .takeCare h3 {
+    font-size: 26px;
+  }
+  .takeCare .button {
+    width: 278px;
+    height: 48px;
+  }
+
+  .WeCanCall {
+    height: 135px;
+    padding: 32px 34px 14px;
+    grid-template-columns: 270px 278px;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    margin: 0 140px 0;
+  }
+
+  .header {
+    min-height: 525px;
+    background: url("img/bg3 3.jpg") no-repeat;
+  }
+  .header__logo {
+    width: 160px;
+    height: 46px;
+    background: url("img/logo_1.png");
+  }
+  .header__bigMenu {
+    margin-left: 140px;
+  }
+  .header__textLink {
+    margin-top: 88px;
+  }
+  .header__textLink .slogan {
+    width: 800px;
+    font-size: 46px;
+    line-height: 70px;
+  }
+  .header__textLink .slogan span {
+    font-size: 34px;
+    line-height: 55px;
+  }
+
+  .bigMenu__link {
+    font-size: 17px;
+  }
+
+  .weAggregator {
+    height: 420px;
+    background: url(img/Group_2.png) 84% 50%/46% auto no-repeat #F7F7F7;
+    margin-top: 0;
+    padding: 97px 0 0 140px;
+  }
+  .weAggregator__text {
+    height: 300px;
+    margin-top: 0;
+  }
+  .weAggregator__text h2 {
+    width: 400px;
+    height: 80px;
+    text-align: left;
+    line-height: 40px;
+  }
+  .weAggregator__text p {
+    width: 430px;
+    font-size: 14.5px;
+    line-height: 20px;
+  }
+
+  .steps {
+    padding: 68px 140px;
+    grid-template-columns: repeat(auto-fill, minmax(462px, 1fr));
+  }
+
+  .step {
+    grid-template-rows: 312px 36px auto;
+    grid-gap: 20px;
+  }
+  .step__picture {
+    width: 462px;
+  }
+  .step__name {
+    margin-top: 4px;
+    font-size: 28px;
+  }
+  .step__content {
+    font-size: 18px;
+  }
+
+  .takeCare {
+    padding: 70px 140px;
+    grid-template-columns: 709px 358px;
+    justify-content: space-between;
+  }
+  .takeCare h3 {
+    font-size: 32px;
+    width: 709px;
+  }
+  .takeCare .button {
+    width: 358px;
+  }
+
+  .WeCanCall {
+    height: 150px;
+    padding: 73px 140px 41px;
+    grid-template-columns: 725px 360px;
+    justify-content: space-between;
+  }
+  .WeCanCall__header h2 {
+    font-size: 43px;
+  }
+  .WeCanCall__header p {
+    font-size: 22px;
+  }
+  .WeCanCall__phoneInput {
+    width: 358px;
+  }
+  .WeCanCall__button {
+    width: 358px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
